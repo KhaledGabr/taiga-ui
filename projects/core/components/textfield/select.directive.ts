@@ -38,6 +38,7 @@ export class TuiSelectDirective extends TuiTextfieldDirective {
 
     public focus(): void {
         this.el.classList.add('_ios-fix');
+        // TODO: Disable focus for iOS 13 and 14
         this.el.focus();
         this.el.classList.remove('_ios-fix');
     }
